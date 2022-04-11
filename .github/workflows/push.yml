@@ -49,5 +49,5 @@ jobs:
       run: echo LINT
 
   test:
-    needs: [build, lint]
+    needs: [lint, build]
     runs-on: windows-latest
